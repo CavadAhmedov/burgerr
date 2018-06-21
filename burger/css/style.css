@@ -1,0 +1,155 @@
+/* ====== DEFAULTS ====== */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+input{
+	outline:none;
+}
+
+
+/* ====== SITE COVER ====== */
+
+#site-cover{
+	font-family: 'Arvo', serif;
+	padding-top:100px;
+	background-image: url("../img/1.jpg");
+	width:100%;
+	height:80vh;
+	background-size: cover;
+}
+/* ====== COVER CLICKER ====== */
+.cover-clicker{
+	position: absolute;
+	width: 50px;
+	height:calc(80vh - 100px);
+}
+.cover-clicker > ul > li{
+	overflow: hidden;
+	margin-bottom:20px;
+	height:20px;
+	width:20px;
+	border-radius: 100%;
+	border:1px solid white;
+}
+#first-cover >div{
+	transform: rotate(540deg);
+	z-index: 5;
+	width:20px;
+	border-radius:100%;
+	background-color: white;
+	height:20px;
+}
+#second-cover > div {
+	transform: rotate(540deg);
+	width:20px;
+	border-radius:100%;
+	background-color: white;
+	height: 0;
+}
+.clicker-up{
+	animation:1s clickUp forwards;
+}
+.clicker-down{
+	animation: 1s clickDown forwards;
+}
+@keyframes clickUp{
+	0%{
+		height: 0px;
+	}
+	100%{
+		height: 20px;
+	}
+}
+@keyframes clickDown{
+	0%{
+		height:20px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+/* ====== NAVBAR ====== */
+#navbar{
+/*	padding: 0 400px;*/
+}
+.navbar-container{
+	background-color:#311c0f;
+}
+.navbar-list > ul{
+	margin:0;
+}
+.navbar-list > ul > li > a {
+	font-size:18px;
+	padding:0 15px;
+	color:#c7a87f;
+	text-decoration: none;
+}
+.navbar-list > ul > li:first-child a{
+	color:#D6C7AC;
+}
+.navbar-list > ul > li{
+	padding:30px 0;
+}
+.logo{
+	margin:25px 15px;
+	height: 35px;
+	width: 35px;
+}
+.logo img{
+	height:35px;
+	width: 35px;
+	object-fit: 100%;
+}
+
+/* ====== COVER CONTENT ====== */
+
+.cover-content{
+	height: 50px;
+	width: 370px;
+}
+.cover-content img{
+	height: 50px;
+	width:370px;
+	object-fit: cover;
+}
+.order-online{
+	text-align: center;
+}
+.order-online > a{
+	font-style: bold;
+	letter-spacing: 10px;
+	text-decoration: none;
+	font-weight:900;
+	color:white;
+	font-size:56px;
+	line-height:70px;
+
+}
+.check-menu{
+	text-align: center;
+}
+.check-menu > a{
+	text-decoration: none;
+	font-weight:900;
+	font-style: bold;
+	padding:10px 50px;
+	background-color:#E3CA96;
+	color:#311C0F;
+	font-size:16px;
+	letter-spacing: 1.5px;
+}
+.content-items{
+	padding-top:60px;
+}
+.content-items > div{
+	padding:30px 0;
+}
